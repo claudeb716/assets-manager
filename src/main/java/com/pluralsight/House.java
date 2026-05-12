@@ -50,13 +50,14 @@ public class House extends Asset {
     public double getValue(){
 
         if (condition == 1){
-           return orginalCost = 180.00/squareFoot;
+           return orginalCost = 180.00/(squareFoot*lotSize);
         } else if (condition == 2) {
-           return orginalCost = 130.00/squareFoot;
+           return orginalCost = 130.00/(squareFoot*lotSize);
         } else if (condition == 3) {
-            return orginalCost = 90.00/squareFoot;
-        } else if (condition == 4) {
-            return orginalCost = 80.00/squareFoot;
+            return orginalCost = 90.00/(squareFoot*lotSize);
+        } else if (condition == 4){
+            return orginalCost = 80.00/(squareFoot*lotSize);
         }
+        return orginalCost;
     }
 }
